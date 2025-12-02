@@ -1,50 +1,113 @@
-# Welcome to your Expo app 👋
+# rotalize-app
+O Rotalize é um aplicativo mobile desenvolvido como Trabalho de Conclusão de Curso para auxiliar empresas na organização e otimização de rotas de entrega. Este repositório contém exclusivamente o front-end do aplicativo, desenvolvido integralmente em React Native + Expo.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+📍 Rotalize – Aplicativo de Otimização de Rotas
 
-## Get started
+Front-end desenvolvido por: Fabiane Pereira Muniz Ribeiro
+Tecnologias: React Native · Expo Router · TypeScript · Axios · SecureStore
 
-1. Install dependencies
+📘 Sobre o Projeto
 
-   ```bash
-   npm install
-   ```
+O Rotalize é um aplicativo mobile desenvolvido como Trabalho de Conclusão de Curso para auxiliar empresas na organização e otimização de rotas de entrega.
+Este repositório contém exclusivamente o front-end do aplicativo, desenvolvido integralmente em React Native + Expo.
 
-2. Start the app
+A interface foi construída para oferecer uma experiência fluida e acessível, com fluxos completos de:
+Login
+Cadastro
+Recuperação de senha
+Gerenciamento de usuários
+Cadastro e listagem de veículos
+Criação e gerenciamento de rotas
+Perfis com permissões diferentes (Admin, Manager, User)
 
-   ```bash
-   npx expo start
-   ```
+📂 Tecnologias Utilizadas
+Front-end
+React Native (Expo)
+TypeScript
+Expo Router (file-based routing)
+Figma
+Integrações
+Consumo de API REST
+Autenticação JWT
 
-In the output, you'll find options to open the app in a
+🧩 Arquitetura do Front-end
+O front-end foi estruturado seguindo boas práticas de organização e escalabilidade:
+src/
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+🔐 Autenticação
+Implementação do fluxo completo de autenticação:
+Login com validação
+Armazenamento seguro do token via SecureStore
+Interceptadores Axios para incluir token nas requisições
+Rotas protegidas com Expo Router
+Redirecionamento automático baseado no perfil de usuário
+Perfis incluídos:
+Admin · Manager · User
 
-## Get a fresh project
+🛣️ Navegação (Expo Router)
+A navegação foi construída utilizando file-based routing, separando áreas conforme o tipo de usuário:
 
-When you're ready, run:
+app/
+├── (auth)/         → login, cadastro, recuperação de senha
+├── (admin)/        → usuários, veículos, estatísticas
+├── (manager)/      → rotas, veículos, vinculo de equipe
+└── (user)/         → rotas, status de rotas, veículos, detalhes do usuário
 
-```bash
-npm run reset-project
-```
+Cada perfil acessa apenas as telas permitidas.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+💡 Funcionalidades Implementadas
+Front-end completo do aplicativo
+Mais de 20 telas desenvolvidas
+Navegação avançada com expo-router (pilhas, abas e nested layouts)
+Formulários com validação
+Consumo real de API REST
+Fluxos de CRUD (usuários, veículos, rotas)
+Filtros, ordenações e listagens
+Controle de permissões por perfil
+Armazenamento seguro de autenticação
+Design responsivo
+Paleta de cores, tipografia e componentes padronizados com Figma
 
-## Learn more
+📸 Prints das Telas
 
-To learn more about developing your project with Expo, look at the following resources:
+As imagens oficiais estão presentes no TCC.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🎥 Demonstração completa do app:
+➡️ https://youtu.be/seu_video
 
-## Join the community
+⚠️ Sobre o Back-end
+O back-end utilizado foi desenvolvido para fins acadêmicos em outro módulo do projeto.
+Por não ser de minha autoria e por questões de privacidade, não está incluído neste repositório.
 
-Join our community of developers creating universal apps.
+🚀 Como Rodar o Projeto
+# Clone o repositório
+git clone https://github.com/seu-user/rotalize.git
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Acesse a pasta
+cd rotalize
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npx expo start
+
+✨ Sobre Mim
+
+Olá! Eu sou a Fabiane Muniz 👋
+Atuo na área de tecnologia com foco em desenvolvimento front-end e mobile, suporte técnico e análise de dados.
+Sou estudante de Análise e Desenvolvimento de Sistemas e apaixonada por criar interfaces funcionais e bonitas, sempre focadas na experiência do usuário.
+
+Atualmente estudo e desenvolvo:
+React Native (Expo)
+JavaScript / TypeScript
+PHP
+Python
+Java
+SQL (MySQL e PostgreSQL)
+HTML & CSS
+
+📌 Busco oportunidades como Desenvolvedora Júnior.
+📌 Adoro aprender, testar e criar projetos completos.
+📌 Estou montando meu GitHub para mostrar minha evolução como dev.
